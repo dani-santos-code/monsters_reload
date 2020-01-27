@@ -19,6 +19,15 @@ class App extends Component {
 		);
 	}
 
+	/* you don't bind in arrow functions. they attach
+  this to the place where the method was built
+  (the context here is the App component)
+  Lexical Scoping - it binds this to the place where defined */
+
+	handleChange = e => {
+		this.setState({ searchField: e.target.value });
+	};
+
 	render() {
 		const { monsters, searchField } = this.state;
 		const filteredMonsters = monsters.filter(monster =>
@@ -26,11 +35,10 @@ class App extends Component {
 		);
 		return (
 			<div className="App">
+				<h1>Monsters Rolodex</h1>
 				<SearchBox
 					placeholder="search monster"
-					handleChange={e => {
-						this.setState({ searchField: e.target.value });
-					}}
+					handleChange={this.handleChange}
 				/>
 
 				<CardList monsters={filteredMonsters} />
