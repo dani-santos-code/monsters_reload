@@ -1,7 +1,6 @@
-This is a project done as an exercise for the course [Complete React Developer in 2020 (w/ Redux, Hooks, GraphQL] (https://www.udemy.com/course/complete-react-developer-zero-to-mastery/)
+This is a project done as an exercise for the course [Complete React Developer in 2020](https://www.udemy.com/course/complete-react-developer-zero-to-mastery/). 
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and was deployed to GitHub pages: https://dani-santos-code.github.io/monsters_reload/
 
 ## Available Scripts
 
